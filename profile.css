@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+input[type="file"]{
+    display: none;
+}
+.profile_conteiner{
+    /* modify the profile conteiner */
+    display: grid;
+    height: 300vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2.6fr 6fr 2fr ;
+    /* using grid area */
+    grid-template-areas: 
+    "main main main main"
+    "section section section section"
+    "footer footer footer footer"
+    
+}
+main{
+    background-color: rgb(126, 54, 54);
+    grid-area: main;
+}
+section{
+    background-color: white;
+    grid-area:section;
+    margin-top: 334px;
+}
+footer{
+    background-color: azure;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+svg{
+    cursor: pointer;
+}
+
+/* global css */
+.flx_column{
+    display: flex;
+    flex-direction: column;
+}
+.pointer{
+    cursor: pointer;
+}
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.absolute{
+    position: absolute;
+}
+.font_20{
+    font-size: 20px;
+}
+.jc_between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jc_everly{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.border5{
+    border-radius: 50%;
+}
+/* start rating css */
+.star_rating_svg{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    user-select: none;
+}
+.rated{
+    fill: rgb(224, 224, 9);
+}
+/* profile image conteiner css */
+.profile_picture_conteiner{
+   display: flex;
+   flex-direction: column;
+}
+.profile_back_image{
+    height: 66vh;
+    width: 100%;
+    background-color: rgb(132, 130, 130);
+    font-size: 50px;
+}
+.profile_main_image{
+    width: 300px;
+    height: 300px;
+    top: 37%;
+    right: 50%;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+    border: 1px solid #c3c3c3;
+}
+.profile_main_image img{
+    width: 300px;
+    height: 300px;
+}
+.profile_main_image_text{
+    top: 42%;
+    left: 35%;
+    font-size: 34px;
+}
+.profile_mail_label{
+    position: absolute;
+    top: 58%;
+    left: 86%;
+}
+#profile_back_span{
+    display: flex;
+}
+.profile_back_image{
+    background-image: none;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.profile_main_image{
+    background-image: none;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.profile_main_photo_conteiner{
+    display: flex !important;
+    flex-direction: column;
+}
+.profile_input{
+    top: 90%;
+    right: 50%;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(50%, 50%)
+}
+/* profile input */
+.input-container {
+    position: relative;
+    margin: 50px auto;
+    width: 200px;
+  }
+  
+  .input-container input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  
+  
+  .input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  
+  .input-container input[type="text"]:focus ~ .underline,
+  .input-container input[type="text"]:valid ~ .underline {
+    transform: scaleX(1);
+  }
+
+  /* card css */
+.post_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+.profile_post_card_conteiner{
+    border: 1px solid;
+    margin: 30px;
+}
+.post_box{
+    border: 1px solid;
+    display: flex;justify-content: center;align-items: center;padding: 90px;
+    background: url();
+   
+}
+.post_box_main h1{
+    text-align: center;
+}
+.post_box_main{
+    margin: 50px;
+}
+.post_box{
+    position: relative;
+    overflow: hidden;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.post_content{
+    display: flex;
+}
+.post_box > .post_content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(183, 110, 110);
+    transition: 200ms ease-in-out ;
+}
+.post_box>.post_content{
+opacity: 0;
+}
+.post_box:hover>.post_content{
+opacity: 1;
+}
+.jc_everly h1{
+    user-select: none;
+}
+
+@media only screen and (max-width:1900px) {
+    .profile_main_image{
+        width: 300px;
+        height: 300px;
+    }
+    .profile_main_image img{
+        width: 300px;
+        height: 300px;   
+    }
+}
+@media only  screen and (max-width: 768px) {
+    .profile_main_image{
+        width: 200px;
+        height: 200px;
+        top: 45%;
+        right: 50%;
+    }
+    .profile_main_image img{
+        width: 200px;
+        height: 200px;
+    }
+    .profile_main_image_text {
+        left: 29%;
+    }
+    .profile_mail_label{
+        left: 83%;
+    }
+    .profile_input{
+        top: 80%;
+        right: 50%;
+    }
+    .post_box_main{
+        margin: 30px;
+    }
+    .profile_post_card_conteiner{
+        margin: 50px 0 0 0 ;
+    }
+    .post_grid{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+@media only screen and (max-width:470px ) {
+    .profile_main_image{
+        width: 134px;
+        height: 134px;
+        top: 58%;
+        right: 49%;
+    }
+    .profile_main_image img{
+        width: 100px;
+        height: 100px;
+    }
+    .profile_main_image_text {
+        font-size: 17px;
+    }
+    .eye_svg{
+        display: none;
+    }
+    .profile_mail_label{
+        left: -25%;
+    }
+    .post_grid{
+        height: 100%;
+    }
+   
+}
