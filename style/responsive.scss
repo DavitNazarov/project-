@@ -1,0 +1,145 @@
+@media screen and (max-width: 635px) {
+    main {
+        .every {
+            .categories {
+                padding-top: 30px;
+                display: grid;
+                grid-template-columns: 1fr;
+
+                h3 {
+                    margin: auto;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 555px) {
+    main {
+        .every {
+
+            .cards {
+                .forcards {
+                    box-shadow: 12px 0px 10px 0px;
+
+                    .card {
+
+                        .first {
+                            height: 120px;
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            margin: auto;
+
+                            input {
+                                margin: auto;
+                            }
+                        }
+
+                        .second {
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            margin: auto;
+
+                            img {
+                                margin: auto;
+                            }
+
+                            h6 {
+                                width: 100%;
+                                height: 100px;
+                                left: 0px;
+                            }
+                        }
+
+                        .thrid {
+                            i {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 325px) {
+    main {
+        .every {
+            .fortime {
+                input {
+                    width: 200px;
+                }
+
+            }
+
+            .cards {
+                .forcards {
+                    .card {
+                        .first {
+                            h3 {
+                                display: grid;
+                                grid-template-columns: 1fr;
+                                text-align: center;
+                                padding-top: 10px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    main {
+        .every {
+            padding: 0px 15px;
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    header {
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        margin-top: 50px;
+        z-index: 100;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    main {
+        .every {
+            .cards {
+                .popup {
+                    .message {
+                        width: 100%;
+                        height: 50px;
+                    }
+
+                    h5 {
+                        width: 50px;
+                        height: 20px;
+                        font-size: 14px;
+                    }
+
+                    button {
+                        width: 50px;
+                        height: 20px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
