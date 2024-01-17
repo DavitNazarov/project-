@@ -3,6 +3,32 @@
     margin: 0;
     padding: 0;
 }
+
+
+header .navbar {
+    background-color: rgb(0, 0, 0) !important;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    margin-bottom: 0px;
+  }
+  header .navbar .container-fluid .collapse ul {
+    gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header .navbar .container-fluid .collapse ul li a {
+    color: white;
+    font-size: 20px;
+    gap: 16px;
+  }
+  header .navbar .container-fluid .collapse ul li a:hover {
+    background-color: white;
+    color: black;
+    transition: 1s linear;
+  }
+  
 input[type="file"]{
     display: none !important;
 }
@@ -17,47 +43,14 @@ input[type="file"]{
     "header header header header"
     "main main main main"
     "section section section section"
-    "footer footer footer footer"
-    
+    "footer footer footer footer"   
 }
 
-.navbar {
-    background-color: rgb(0, 0, 0) !important;
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-  }
-.navbar .container-fluid .collapse ul {
-    gap: 20px;
-  }
-.navbar .container-fluid .collapse ul li a {
-    color: white;
-    font-size: 20px;
-    gap: 16px;
-  }
-.navbar .container-fluid .collapse ul li a:hover {
-    background-color: white;
-    color: black;
-    transition: 1s linear;
-}
-.navbar{
-    display: flex;
-    justify-content: space-evenly;
-}
-header .navbar {
-    background-color: rgb(0, 0, 0) !important;
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-}
 
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    grid-area: header;
-}
+
+
+  
+
 
 main{
     background-color: rgb(126, 54, 54);
@@ -400,3 +393,13 @@ opacity: 1;
         margin: 8px;
     }
 }
+@media screen and (max-width: 990px) {
+    header {
+      width: 100%;
+      position: fixed;
+      bottom: 0px;
+      margin-top: 50px;
+      z-index: 100;
+     
+    }
+  }
