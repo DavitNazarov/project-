@@ -1,3 +1,11 @@
+function burger() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 document.addEventListener("DOMContentLoaded", function () {
   const star_rating_svg = document.querySelectorAll(".star_rating_svg svg");
 
@@ -264,6 +272,7 @@ myForm.addEventListener("submit", addPostRequest);
 let postConteiner1 = document.querySelector(".post_grid");
 let getPost = document.createElement("div");
 getPost.className = "post_box_main";
+
 {
   localStorage.getItem("userPostsInput")
     ? (getPost.innerHTML = `
@@ -329,9 +338,10 @@ user_input_post_add_file.addEventListener("change", function () {
   });
   read.readAsDataURL(this.files[0]);
 });
+
+let post_image = document.getElementById("post_image");
+post_image.style.visibility = "hidden";
 let post_box = document.getElementById("post_box");
 post_box.style.backgroundImage = `url(${localStorage.getItem(
   "user_choosen_image"
 )})`;
-let post_image = document.getElementById("post_image");
-post_image.style.visibility = "hidden";

@@ -6,46 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/profile.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
 </head>
 
 <body>
-    <header class="head">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" style="color:white ;" href="#">Navigation</a>
-            <button style="background-color: white;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span  class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./profile.html">Profile</a>
-                </li>
-                <li class="
-                Log
-                nav-item">
-                  <a class="nav-link" style="color: red !important;" href="#">Log in</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
 
-    
-
-   
 
     <div class="profile_conteiner">
+        <header>
+            <nav class="nav_conteiner">
+                <div class="nav">
+                    <input type="checkbox" id="nav-check">
+                    <div class="nav-header">
+                        <div class="nav-title">
+                            Profile
+                        </div>
+                    </div>
+                    <div class="nav-btn">
+                        <label for="nav-check">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+
+                    <div class="nav-links">
+                        <a href="./index.html" target="_blank">Home</a>
+                        <a href="./profile.html">Profile</a>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
         <main>
             <div class="profile_picture_conteiner">
 
@@ -164,7 +158,7 @@
             </div>
         </main>
         <section>
-            <div class="jc_everly">
+            <div class="jc_everly post_methods">
                 <h1 class="pointer" id="add_post">add post </h1>
                 <!-- modal -->
                 <button type="button" data-toggle="modal" data-target="#myModal" class="modal_Btn">
@@ -212,17 +206,15 @@
                 </div>
             </div>
         </section>
-       
-    </div>
+
+        <footer>
+            <div class="foot jc_between">
+                <h5 class="flex-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repudiandae
+                    officiis exercitationem.</h5>
+            </div>
+        </footer>
     </div>
 
-    
-  <footer>
-    <div class="foot">
-     <h5 class="flex-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repudiandae officiis exercitationem.</h5>
-    </div>
-   </footer>
- 
 
 
     <script src="./js/profile.js"></script>
