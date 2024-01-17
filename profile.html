@@ -5,13 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./style/profile.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
     <div class="profile_conteiner">
-        <!-- nav bar here -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div>
+                    <h1>logo</h1>
+                </div>
+                <div class="nav_li">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./profile.html"> Profile</a> </li>
+                        <li>logIN</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <main>
             <div class="profile_picture_conteiner">
 
@@ -132,7 +148,46 @@
         <section>
             <div class="jc_everly">
                 <h1 class="pointer" id="add_post">add post </h1>
-                <h1 class="pointer">edit post</h1>
+                <!-- modal -->
+                <button type="button" data-toggle="modal" data-target="#myModal" class="modal_Btn">
+                    add new post
+                </button>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Enter some data</h5>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="myForm">
+                                    <div class="form-group Margin_15">
+                                        <input type="text" class="form-control" id="myInput" placeholder="Text title">
+                                    </div>
+                                    <div class="form-floating Margin_15">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea">                                              </textarea>
+                                    </div>
+                                    <div class="form-floating Margin_15 w4">
+                                        <label class="pointer">
+                                            <div class="user_choose_image">
+                                                <span>choose imagec*</span>
+                                                <input type="file" accept="image/jpeg, image/png, image/jpg"
+                                                    id="user_input_post_add_file">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <p id="user_choose_file_name"></p>
+                                    <div class="Margin_15">
+                                        <button type="submit" class="btn btn-primary" id="myButton">Add post
+                                            request</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="profile_post_card_conteiner">
                 <div class="post_grid" id="post_grid">
@@ -145,7 +200,7 @@
     </div>
     </div>
 
-    <script src="./profile.js"></script>
+    <script src="./js/profile.js"></script>
 </body>
 
 </html>
